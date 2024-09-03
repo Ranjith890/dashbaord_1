@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="help.css">
+    <script src="../commonfiles/script.js"></script>
+    <script src="help.js"></script>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="sidebar_op">
+            <div class="brand_logo">
+                <a href="#"><img src="../assets/image.png"></a>
+            </div>
+            <div class="sidebar_options">
+                <ul>
+                    <li>
+                        <a href="../index.html">
+                            <i class="bx bxs-home"></i>
+                            <span class="text">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../dashboard/dashboard.html">
+                            <i class="bx bxs-dashboard"></i>
+                            <span class="text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bx bxs-shopping-bag-alt"></i>
+                            <span class="text">Curriculum</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="help.html">
+                            <i class="bx bxs-help-circle"></i>
+                            <span class="text">Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="logout_button">
+            <div class="themes">
+                <button id="dark_button"><i class='bx bxs-moon' ></i>Dark Mode</button>
+                <button id="light_button"><i class='bx bxs-sun'></i>Light Mode</button>
+            </div>
+            <button><i class='bx bx-log-out'></i>Logout</button>
+        </div>
+    </aside>
+
+    <main class="container">
+        <header>
+            <nav>
+                <div class="navigation_option_name">
+                    <span>Help</span>
+                </div>
+                <div class="logo">
+                    <img src="../assets/logo.png">
+                </div>
+                <div class="user_name">
+                    <span>Ranjith</span>
+                </div>
+                <div class="common_options">
+                    <a><i class='bx bx-search'></i></a>
+                    <a><i class='bx bxs-bell bx-tada-hover'></i></a>
+                    <a><i class="bx bxs-user-circle"></i></a>
+                </div>
+            </nav>
+        </header>
+
+        <section class="help-page-content">
+            <div class="question">
+                <div class="question_content">
+                    <p>How do I Sign Up for a Course?</p>
+                    <i class='bx bx-chevron-down'></i>
+                    <i class='bx bx-chevron-up' ></i>
+                </div>
+                <div class="answer_content">
+                    <p class="para">
+                        hello world
+                    </p>
+                </div>
+            </div>
+            <div class="question">
+                <div class="question_content">
+                    <p>How do I reset My Password?</p>
+                    <i class='bx bx-chevron-down'></i>
+                    <i class='bx bx-chevron-up' ></i>
+                </div>
+                <div class="answer_content">
+                    <p class="para">
+                        hello world
+                    </p>
+                </div>
+            </div>
+            <div class="question">
+                <div class="question_content">
+                    <p>How can i access my course materials?</p>
+                    <i class='bx bx-chevron-down'></i>
+                    <i class='bx bx-chevron-up' ></i>
+                </div>
+                <div class="answer_content">
+                    <p class="para">
+                        hello world
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-page-content">
+            <div class="contact-details">
+                <h2>Contact Information</h2>
+                <p><i class='bx bx-map'></i> Hyderabad, Kandlakoya</p>
+                <p><i class='bx bx-phone'></i>+91&nbsp;</p>8790888936
+                <p><i class='bx bx-envelope'></i> example@gmail.com</p>
+            </div>
+
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form id="contactForm">
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="mobile">Mobile No</label>
+                            <input type="tel" id="mobile" name="mobile" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="alt-mobile">Alternate Mobile No</label>
+                            <input type="tel" id="alt-mobile" name="alt-mobile" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

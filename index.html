@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="commonfiles/script.js"></script>
+</head>
+<body>
+
+    <!-- overall design 
+     This webpage is designed with side bar and container( two columns) 
+      side bar consists of brand logo , options ,logout button
+      main continer contains header,mycourses,learning time,achievements,all courses-->
+    <!-- sidebar html code -->
+    <aside class="sidebar">
+
+        <div class="sidebar_op">
+            <!-- Brand Logo  -->
+        <div class="brand_logo">
+            <a href="#"><img src="assets/image.png"></a>
+        </div>
+
+        <!-- sidebar options -->
+
+        <div class="sidebar_options">
+            <ul>
+                <li class="active">
+                    <a href="index.html" >
+                      <i class="bx bxs-home"></i>
+                      <span class="text">Home</span>
+                    </a>
+                  </li>
+                <li>
+                    <a href="dashboard/dashboard.html">
+                      <i class="bx bxs-dashboard"></i>
+                      <span class="text">Dashboard</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="bx bxs-shopping-bag-alt"></i>
+                      <span class="text">Curriculum</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="help/help.html">
+                      <i class="bx bxs-help-circle"></i>
+                      <span class="text">Help</span>
+                    </a>
+                  </li>
+            </ul>
+        </div>
+        </div>
+
+
+
+        <!-- logout button -->
+
+        <div class="logout_button">
+            <div class="themes">
+                <button id="dark_button"><i class='bx bxs-moon' ></i>Dark Mode</button>
+                <button id="light_button"><i class='bx bxs-sun'></i>Light Mode</button>
+            </div>
+            <button><i class='bx bx-log-out'></i>Logout</button>
+        </div>
+    </aside>
+
+    <!-- container html code -->
+    <!-- container includes header and remaining things -->
+    <main class="container">
+        <header>
+            <!-- navigation home,search icon,profile pic,notifications -->
+            <nav>
+                <div class="navigation_option_name">
+                    <span>Home</span>
+                </div>
+
+                <div class="logo">
+                    <img src="assets/logo.png">
+                </div>
+                <div class="user_name">
+                    <span>Ranjith</span>
+                </div>
+                <div class="common_options">
+                    <a><i class='bx bx-search'></i></a>
+                    <a><i class='bx bxs-bell bx-tada-hover'></i></a>
+                    <a><i class="bx bxs-user-circle"></i></a>
+                </div> 
+            </nav>
+        </header>
+
+        <section class="message">
+            <span>Good Morning User! Great Day To Learn......</span>
+        </section>
+
+
+        <section class="mycourse_information">
+            <div class="mycourses">
+                <div class="heading">
+                    <span>My Courses</span>
+                    <a hre="#">see all</a>
+                </div>
+
+                <div class="frames">
+                    <a href="#">
+                        <img src="assets/image.png">
+                        <div class="details">
+                            <h6>Full&nbsp;Stack&nbsp;Web&nbsp;Development</h6>
+                            <span><i class='bx bxs-time'></i>&nbsp;20 hrs</span>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <img src="assets/image.png">
+                        <div class="details">
+                            <h6>Full&nbsp;Stack&nbsp;Web&nbsp;Development</h6>
+                            <span><i class='bx bxs-time'></i>&nbsp;20 hrs</span>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <img src="assets/image.png">
+                        <div class="details">
+                            <h6>Full&nbsp;Stack&nbsp;Web&nbsp;Development</h6>
+                            <span><i class='bx bxs-time'></i>&nbsp;20 hrs</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="course_outcomes">
+                <div class="learning_hours">
+                    <h3>Learning&nbsp;Hours</h3>
+                    <span><i class='bx bxs-time'></i>&nbsp;20 hrs</span>
+                </div>
+
+                <div class="achievements">
+                    <div class="achievements_name">
+                        <h3>Achievements</h3>
+                        <span>No badges Yet</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html> 
